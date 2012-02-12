@@ -1,0 +1,18 @@
+!!! 5
+html(lang='en')
+    head
+        title= 'pew'
+        script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+        script(type='text/javascript', src='/socket.io/socket.io.js')
+        script(type='text/javascript', src='/underscore.js')
+        script(type='text/javascript', src='/backbone.js')
+        script(type='text/javascript', src='/whiteboard.js')
+        script(type='text/javascript', src='/models/models.js')
+        script(type='text/javascript', src='/index.js')
+    body
+        #content
+            p
+                span#client_count 0
+                | connected clients
+
+
