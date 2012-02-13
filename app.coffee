@@ -29,8 +29,8 @@ io.sockets.on 'connection', (client) ->
         client.send changes
 
     client.on 'disconnect', () ->
-        if appModel 
-            appModel.unbind 'publish', sendClientChanges
+        # if appModel
+            # appModel.unbind 'publish', sendClientChanges
 
     client.on 'message', (message) ->
         console.log message.event

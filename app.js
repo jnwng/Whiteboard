@@ -40,9 +40,7 @@
     sendClientChanges = function(changes) {
       return client.send(changes);
     };
-    client.on('disconnect', function() {
-      if (appModel) return appModel.unbind('publish', sendClientChanges);
-    });
+    client.on('disconnect', function() {});
     return client.on('message', function(message) {
       var appModel, collection, model;
       console.log(message.event);
